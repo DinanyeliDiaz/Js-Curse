@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Mi panel de actividades</h1>
+    </header>
+    <main>
+        <ul>
+            <li>Comprar café</li>
+            <li>Preparar el informe</li>
+        </ul>
+    </main>
+
+    <section>
+        <h2>Tareas de hoy</h2>
+        <ul>
+          <li>Comprar café</li>
+        </ul>
+    </section>
+
+    <li>Comprar café <span class="badge-prioridad">alta</span></li>
+
+    <button>Completar</button>  
+
+    <strong>marca algo importante</strong>
+    <em>marca enfasis</em>
+
+    <p>Un bloque citado va en <blockquote>Las cinco solas....</blockquote></p>
+    <p>y para nombrar de donde viene se usa <cite>Libro la palabora</cite></p>
+<!-- Marcarlo como cita, en vez de con un párrafo en cursiva, dice qué es ese texto, no solo cómo se ve.-->
+    <!--PRE siver para conservar los espacios y los santos de linea del texto o codigo tal cual-->
+    <p>para mostrar codigo dentro de un texto se usa <code>"Select * from \"Principal.Compras\"</code></p>
+
+    <p>Si el código ocupa varias líneas y quieres conservar los espacios y los saltos tal cual, se envuelve en pre (de preformatted),<pre> <code> if(string.isNullorEmty) = cant =0;</code></pre> que respeta el formato que el HTML normalmente colapsa. A menudo van juntos, un code dentro de un pre, para un bloque de código.</p>
+    
+    <p>Una fecha escrita como texto el navegador no la entiende como fecha. La etiqueta time marca que eso es un momento, y con el atributo datetime lo pone en un formato que una máquina sí lee</P>
+    <time datetime="2026-03-15">15 de marzo</time>
+
+    <form action="">
+        <!--Cada campo del form debe tener un label asociado y la conexión se hace atravez del 
+        atributo for (del label) y id (del campo)   IMPORTANTE SIEMPRE HACER ESTO-->
+        <label for="titulo">Titulo de la tarea</label>
+        <input type="text" id="titulo" required maxlength="80">
+
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion"></textarea>
+
+        <label for="prioridad">Prioridad</label>
+        <select id="prioridad">
+            <option>baja</option>
+            <option>media</option>
+            <option>alta</option>
+        </select>
+        <button>Crear tarea</button>
+        <!--Cuando varios campos forman un grupo con un sentido común, 
+        se envuelven en un fieldset, y el título de ese grupo va en un legend:-->
+
+        <fieldset>
+            <legend>Prioridad</legend>
+            <label><input type="radio" name="prioridad"> Baja</label>
+            <label><input type="radio" name="prioridad"> Alta</label>
+        </fieldset>
+
+        <!-- required marca un campo como obligatorio, y el navegador no deja enviar el 
+        formulario si está vacío. Y maxlength limita cuántos caracteres se pueden escribir-->
+        <input type="text" id="titulo" required maxlength="80">
+
+
+
+
+    </form>
+    
+
+    <footer>
+        <p>Realizado con HTML</p>
+    </footer>
+
+    <script>
+        console.log("Hola");
+        console.log(maria);
+    </script>
+</body>
+</html>
