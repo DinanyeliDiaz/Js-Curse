@@ -1,0 +1,33 @@
+h1 {
+  /*color: navy;*/
+  color: white;
+}
+
+h1, h2 {
+  /*color: navy;*/
+  color: white;
+}
+
+.lista .tarjeta {
+  border: 1px solid #cbd5e1;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: #f5f7fc;
+  background-color: #000000;
+}
+
+* {
+  box-sizing: border-box; /*Siempre poner al inicio*/
+}
+
+.tarjeta-actividad {
+   padding: 1rem;
+  border: 1px solid #cbd5e1;
+  margin-bottom: .8rem;
+} 
+
+/*Los elementos de bloque, como h1, p, section o ul, ocupan todo el ancho disponible y se apilan uno debajo de otro.
+Los elementos en línea, como a, strong o span, solo ocupan lo que necesitan y se colocan seguidos, dentro de una línea de texto.*/
+
